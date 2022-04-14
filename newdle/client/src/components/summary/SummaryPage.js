@@ -27,7 +27,6 @@ import {
   getUserInfo,
 } from '../../selectors';
 import {usePageTitle} from '../../util/hooks';
-import NewdleLink from '../NewdleLink';
 import ParticipantGrid from '../ParticipantGrid';
 import ParticipantTable from '../ParticipantTable';
 import RecipientList from '../RecipientList';
@@ -260,9 +259,6 @@ export default function SummaryPage() {
               </Table>
             </div>
           )}
-          <div className={styles['container']}>
-            <NewdleLink url={newdle.url} />
-          </div>
           {isCreator && (
             <div className={styles['button-row']}>
               <Button
